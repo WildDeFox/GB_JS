@@ -22,10 +22,11 @@
 <script>
   "use strict";
 
-  let temperCelsius = +prompt("Введите температуру в градусах Цельсия");
-  let temperFahren = (9 / 5) * temperCelsius + 32;
+  const temperCelsius = +prompt("Введите температуру в градусах Цельсия");
+  const temperFahren = (9 / 5) * temperCelsius + 32;
+  const roundedFahren = Math.round(temperFahren * 10) / 10
 
-  alert(`Цельсий: ${temperCelsius}, Фаренгейт: ${temperFahren}`);
+  alert(`Цельсий: ${temperCelsius}, Фаренгейт: ${roundedFahren}`);
 </script>
 </body>
 </html>

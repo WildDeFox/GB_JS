@@ -28,10 +28,10 @@
 <script>
   "use strict";
 
-  let num = prompt("Введите число");
+  const num = prompt("Введите число");
   
-  alert(`В числе ${num} колличество сотен: ${num[num.length - 3]}, ` + 
-  `десятков: ${num[num.length - 2]}, единиц: ${num[num.length - 1]}`)
+  alert(`В числе ${num} колличество сотен: ${num[num.length - 3] ?? 0}, ` + 
+  `десятков: ${num[num.length - 2] ?? 0}, единиц: ${num[num.length - 1]}`)
 </script>
 </body>
 </html>
